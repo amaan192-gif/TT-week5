@@ -21,6 +21,7 @@ async function sendData() {
     });
     let data = await res.text();
     if(res.ok){
+        localStorage.setItem("name",x);
         localStorage.setItem("email",y);
         localStorage.setItem("password",z);
     }

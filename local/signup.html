@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Signup Account</h3>
+        <br>
+        <input id="name" placeholder="name" >
+        <br>
+        <input id="email" placeholder="email" >
+        <br>
+        <input id="password" placeholder="password" >
+        <br>
+        <br>
+        <button onclick="signup();">Signup</button>
+    <script>
+        function signup(){
+            const user={
+                name:name.value,
+                email:email.value,
+                password:password.value,
+            };
+
+            localStorage.setItem("user",JSON.stringify(user));
+            alert("Signup Success!!");
+            location.href="login.html";
+        }
+    </script>
+</body>
+</html>

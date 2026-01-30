@@ -8,7 +8,7 @@ function Use() {
     }else{
         setF("🍏");
     }
-  },[f])
+  },[2])
   return (
     <>
     <div>

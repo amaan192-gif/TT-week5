@@ -17,7 +17,7 @@ public class DeleteUser {
     UserRepo db;
 
     @DeleteMapping("/user/{id}")
-    public String eleteUser(@PathVariable Long id) {
+    public String DeleteUser(@PathVariable Long id) {
 
         db.deleteById(id);
 
